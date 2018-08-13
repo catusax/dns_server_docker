@@ -5,7 +5,7 @@ Dockerfile for Pcap_DNSProxy
 
 # 运行
 ```
-docker run -v /path/to/pcapdns:/etc/pcapdns -p 53:53/tcp -p53:53/udp coolrc/pcap_dnsproxy_docker
+docker run -d -v /path/to/pcapdns:/etc/pcapdns -p 53:53/tcp -p53:53/udp coolrc/pcap_dnsproxy_docker
 ```
 
 ### 注意
