@@ -2,43 +2,43 @@
   "BindAddress": ":53",
   "PrimaryDNS": [
     {
-      "Name": "DNSPod",
-      "Address": "119.29.29.29:53",
-      "Protocol": "udp",
+      "Name": "GoogleDNS",
+      "Address": "8.8.8.8:53",
+      "Protocol": "tcp",
       "SOCKS5Address": "",
       "Timeout": 6,
       "EDNSClientSubnet": {
-        "Policy": "disable",
+        "Policy": "auto",
         "ExternalIP": "",
-        "NoCookie": true
+        "NoCookie": false
       }
     }
   ],
   "AlternativeDNS": [
     {
       "Name": "OpenDNS",
-      "Address": "208.67.222.222:443",
+      "Address": "8.8.8.8:53",
       "Protocol": "tcp",
       "SOCKS5Address": "",
       "Timeout": 6,
       "EDNSClientSubnet": {
-        "Policy": "disable",
+        "Policy": "auto",
         "ExternalIP": "",
-        "NoCookie": true
+        "NoCookie": false
       }
     }
   ],
-  "OnlyPrimaryDNS": false,
+  "OnlyPrimaryDNS": true,
   "IPv6UseAlternativeDNS": false,
   "IPNetworkFile": {
-    "Primary": "./ip_network_primary_sample",
-    "Alternative": "./ip_network_alternative_sample"
+    "Primary": "/overture/ip_network_primary_sample",
+    "Alternative": "/overture/ip_network_alternative_sample"
   },
   "DomainFile": {
-    "Primary": "./domain_primary_sample",
-    "Alternative": "./domain_alternative_sample"
+    "Primary": "/overture/domain_primary_sample",
+    "Alternative": "/overture/domain_alternative_sample"
   },
-  "HostsFile": "./hosts_sample",
+  "HostsFile": "/overture/hosts_sample",
   "MinimumTTL": 0,
   "CacheSize" : 0,
   "RejectQtype": [255]
