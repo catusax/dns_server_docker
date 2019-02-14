@@ -2,14 +2,12 @@ FROM alpine
 
 LABEL maintainer="https://github.com/coolrc136/Pcap_DNSProxy_docker"
 
-ARG TZ="Asia/Shanghai"
-
-ENV TZ ${TZ}
+ENV TZ "Asia/Shanghai"
 ENV VERSION 1.5-rc3
-ENV CONFIG_PATH /etc/pcapdns
 ENV DOWNLOAD_URL https://github.com/shawn1m/overture/releases/download/v${VERSION}/overture-linux-amd64.zip
 
-RUN wget ${DOWNLOAD_URL} \
+RUN apk add --no-cache ca-certificates \
+    && wget ${DOWNLOAD_URL} \
     && unzip overture-linux-amd64.zip \
     && mkdir overture \
     && unzip overture-linux-amd64.zip -d overture \
