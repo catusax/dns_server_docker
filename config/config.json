@@ -3,8 +3,8 @@
   "PrimaryDNS": [
     {
       "Name": "GoogleDNS",
-      "Address": "dns.google:853",
-      "Protocol": "tcp-tls",
+      "Address": "45.77.103.53:5380",
+      "Protocol": "tcp",
       "SOCKS5Address": "",
       "Timeout": 6,
       "EDNSClientSubnet": {
@@ -40,6 +40,6 @@
   },
   "HostsFile": "/overture/hosts_sample",
   "MinimumTTL": 0,
-  "CacheSize" : 1024,
+  "CacheSize" : 0,
   "RejectQtype": [255]
 }
