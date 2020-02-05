@@ -1,22 +1,22 @@
 {
-  "BindAddress": ":53",
+  "BindAddress": ":8053",
   "PrimaryDNS": [
     {
       "Name": "shannxi china mobile",
-      "Address": "211.137.130.3:53",
-      "Protocol": "tcp",
+      "Address": "114.114.114.114:53",
+      "Protocol": "udp",
       "SOCKS5Address": "",
       "Timeout": 6,
       "EDNSClientSubnet": {
-        "Policy": "auto",
-        "ExternalIP": "",
+        "Policy": "manual",
+        "ExternalIP": "111.18.102.19",
         "NoCookie": false
       }
     }
   ],
   "AlternativeDNS": [
     {
-      "Name": "OpenDNS",
+      "Name": "cloudflare",
       "Address": "one.one.one.one:853@1.1.1.1",
       "Protocol": "tcp-tls",
       "SOCKS5Address": "",
