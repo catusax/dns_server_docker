@@ -2,8 +2,8 @@
   "BindAddress": ":53",
   "PrimaryDNS": [
     {
-      "Name": "GoogleDNS",
-      "Address": "45.77.103.53:5380",
+      "Name": "shannxi china mobile",
+      "Address": "211.137.130.3:53",
       "Protocol": "tcp",
       "SOCKS5Address": "",
       "Timeout": 6,
@@ -17,13 +17,13 @@
   "AlternativeDNS": [
     {
       "Name": "OpenDNS",
-      "Address": "8.8.8.8:53",
-      "Protocol": "tcp",
+      "Address": "one.one.one.one:853@1.1.1.1",
+      "Protocol": "tcp-tls",
       "SOCKS5Address": "",
       "Timeout": 6,
       "EDNSClientSubnet": {
-        "Policy": "auto",
-        "ExternalIP": "",
+        "Policy": "manual",
+        "ExternalIP": "111.18.102.19",
         "NoCookie": false
       }
     }

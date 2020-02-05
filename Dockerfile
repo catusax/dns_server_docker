@@ -3,7 +3,7 @@ FROM alpine
 LABEL maintainer="https://github.com/coolrc136/Pcap_DNSProxy_docker"
 
 ENV TZ "Asia/Shanghai"
-ENV VERSION 1.5-rc3
+ENV VERSION v1.6-rc6
 ENV DOWNLOAD_URL https://github.com/shawn1m/overture/releases/download/v${VERSION}/overture-linux-amd64.zip
 
 RUN apk add --no-cache ca-certificates \
