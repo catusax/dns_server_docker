@@ -17,6 +17,7 @@ dig @127.0.0.1 edns-client-sub.net TXT +short
 
 ### other
 更新：增加docker-compose，支持使用nginx部署doh和dot
+todo:由于国内tls查询会有概率被阻断，等待overture正式版支持https查询后，上游dns改为https。
 
 #### 配置文件
 config: overture 配置文件，用于分流查询dns

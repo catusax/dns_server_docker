@@ -1,9 +1,9 @@
 {
-  "BindAddress": ":8053",
+  "BindAddress": "0.0.0.0:5353",
   "PrimaryDNS": [
     {
-      "Name": "shannxi china mobile",
-      "Address": "114.114.114.114:53",
+      "Name": "alidns",
+      "Address": "223.5.5.5:53",
       "Protocol": "udp",
       "SOCKS5Address": "",
       "Timeout": 6,
@@ -12,6 +12,30 @@
         "ExternalIP": "111.18.102.19",
         "NoCookie": false
       }
+    },
+    {
+      "Name": "alidns2",
+      "Address": "223.6.6.6:53",
+      "Protocol": "udp",
+      "SOCKS5Address": "",
+      "Timeout": 6,
+      "EDNSClientSubnet": {
+        "Policy": "manual",
+        "ExternalIP": "111.18.102.19",
+        "NoCookie": false
+      }
+    },
+    {
+        "Name": "tecent",
+        "Address": "119.29.29.29:53",
+        "Protocol": "udp",
+        "SOCKS5Address": "",
+        "Timeout": 6,
+        "EDNSClientSubnet": {
+            "Policy": "manual",
+            "ExternalIP": "111.18.102.19",
+        "NoCookie": false
+        }
     }
   ],
   "AlternativeDNS": [
@@ -20,7 +44,31 @@
       "Address": "one.one.one.one:853@1.1.1.1",
       "Protocol": "tcp-tls",
       "SOCKS5Address": "",
-      "Timeout": 6,
+      "Timeout": 10,
+      "EDNSClientSubnet": {
+        "Policy": "manual",
+        "ExternalIP": "111.18.102.19",
+        "NoCookie": false
+      }
+    },
+    {
+      "Name": "cloudflare+tcp",
+      "Address": "1.1.1.1:53",
+      "Protocol": "tcp",
+      "SOCKS5Address": "",
+      "Timeout": 10,
+      "EDNSClientSubnet": {
+        "Policy": "manual",
+        "ExternalIP": "111.18.102.19",
+        "NoCookie": false
+      }
+    },
+	{
+      "Name": "opendns",
+      "Address": "208.67.222.222:5353",
+      "Protocol": "tcp",
+      "SOCKS5Address": "",
+      "Timeout": 10,
       "EDNSClientSubnet": {
         "Policy": "manual",
         "ExternalIP": "111.18.102.19",
@@ -28,7 +76,7 @@
       }
     }
   ],
-  "OnlyPrimaryDNS": true,
+  "OnlyPrimaryDNS": false,
   "IPv6UseAlternativeDNS": false,
   "IPNetworkFile": {
     "Primary": "/overture/ip_network_primary_sample",
@@ -39,7 +87,7 @@
     "Alternative": "/overture/domain_alternative_sample"
   },
   "HostsFile": "/overture/hosts_sample",
-  "MinimumTTL": 0,
-  "CacheSize" : 0,
+  "MinimumTTL": 300,
+  "CacheSize" : 4096,
   "RejectQtype": [255]
 }
