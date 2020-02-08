@@ -24,45 +24,9 @@
         "ExternalIP": "111.18.102.19",
         "NoCookie": false
       }
-    },
-    {
-        "Name": "tecent",
-        "Address": "119.29.29.29:53",
-        "Protocol": "udp",
-        "SOCKS5Address": "",
-        "Timeout": 6,
-        "EDNSClientSubnet": {
-            "Policy": "manual",
-            "ExternalIP": "111.18.102.19",
-        "NoCookie": false
-        }
     }
   ],
   "AlternativeDNS": [
-    {
-      "Name": "cloudflare",
-      "Address": "one.one.one.one:853@1.1.1.1",
-      "Protocol": "tcp-tls",
-      "SOCKS5Address": "",
-      "Timeout": 10,
-      "EDNSClientSubnet": {
-        "Policy": "manual",
-        "ExternalIP": "111.18.102.19",
-        "NoCookie": false
-      }
-    },
-    {
-      "Name": "cloudflare+tcp",
-      "Address": "1.1.1.1:53",
-      "Protocol": "tcp",
-      "SOCKS5Address": "",
-      "Timeout": 10,
-      "EDNSClientSubnet": {
-        "Policy": "manual",
-        "ExternalIP": "111.18.102.19",
-        "NoCookie": false
-      }
-    },
 	{
       "Name": "opendns",
       "Address": "208.67.222.222:5353",
