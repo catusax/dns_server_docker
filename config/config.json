@@ -8,7 +8,7 @@
       "SOCKS5Address": "",
       "Timeout": 6,
       "EDNSClientSubnet": {
-        "Policy": "manual",
+        "Policy": "auto",
         "ExternalIP": "111.18.102.19",
         "NoCookie": false
       }
@@ -20,7 +20,7 @@
       "SOCKS5Address": "",
       "Timeout": 6,
       "EDNSClientSubnet": {
-        "Policy": "manual",
+        "Policy": "auto",
         "ExternalIP": "111.18.102.19",
         "NoCookie": false
       }
@@ -34,7 +34,7 @@
       "SOCKS5Address": "",
       "Timeout": 10,
       "EDNSClientSubnet": {
-        "Policy": "manual",
+        "Policy": "auto",
         "ExternalIP": "111.18.102.19",
         "NoCookie": false
       }
@@ -46,7 +46,7 @@
       "SOCKS5Address": "",
       "Timeout": 10,
       "EDNSClientSubnet": {
-        "Policy": "manual",
+        "Policy": "auto",
         "ExternalIP": "111.18.102.19",
         "NoCookie": false
       }
@@ -58,7 +58,7 @@
       "SOCKS5Address": "",
       "Timeout": 10,
       "EDNSClientSubnet": {
-        "Policy": "manual",
+        "Policy": "auto",
         "ExternalIP": "111.18.102.19",
         "NoCookie": false
       }
@@ -68,11 +68,6 @@
   "OnlyPrimaryDNS": false,
   "IPv6UseAlternativeDNS": false,
   "AlternativeDNSConcurrent": false,
-  "TCPPoolConfig": {
-    "InitialCapacity": 0,
-    "MaxCapacity": 15,
-    "IdleTimeout": 30
-  },
   "WhenPrimaryDNSAnswerNoneUse": "PrimaryDNS",
   "IPNetworkFile": {
     "Primary": "./ip_network_primary_sample",
