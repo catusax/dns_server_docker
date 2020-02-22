@@ -50,22 +50,9 @@
         "ExternalIP": "111.18.102.19",
         "NoCookie": false
       }
-    },
-    {
-      "Name": "rubyfish",
-      "Address": "https://i.233py.com/dns-query",
-      "Protocol": "https",
-      "SOCKS5Address": "",
-      "Timeout": 10,
-      "EDNSClientSubnet": {
-        "Policy": "auto",
-        "ExternalIP": "111.18.102.19",
-        "NoCookie": false
-      }
     }
-
   ],
-  "OnlyPrimaryDNS": false,
+  "OnlyPrimaryDNS": true,
   "IPv6UseAlternativeDNS": false,
   "AlternativeDNSConcurrent": false,
   "WhenPrimaryDNSAnswerNoneUse": "PrimaryDNS",
@@ -76,7 +63,7 @@
   "DomainFile": {
     "Primary": "./domain_primary_sample",
     "Alternative": "./domain_alternative_sample",
-    "Matcher":  "full-map"
+    "Matcher":  "regex-list"
   },
   "HostsFile": {
     "HostsFile": "./hosts_sample",
