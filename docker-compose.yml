@@ -2,16 +2,19 @@ version: '3'
 
 services:
   overture:
+    restart: always
     image: coolrc/overture
     volumes:
       - ./config:/overture
 
   doh:
+    restart: always
     image: coolrc/dns-over-https
     volumes:
       - ./doh-server.conf:/doh-server.conf
 
   nginx:
+    restart: always
     image: nginx:stable-alpine
     depends_on:
       - overture
