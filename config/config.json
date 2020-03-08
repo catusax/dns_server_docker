@@ -27,21 +27,9 @@
     }
   ],
   "AlternativeDNS": [
-	{
-      "Name": "opendns",
-      "Address": "208.67.222.222:5353",
-      "Protocol": "tcp",
-      "SOCKS5Address": "",
-      "Timeout": 10,
-      "EDNSClientSubnet": {
-        "Policy": "auto",
-        "ExternalIP": "111.18.102.19",
-        "NoCookie": false
-      }
-    },
     {
       "Name": "cloudflare",
-      "Address": "https://1.1.1.1/dns-query",
+      "Address": "https://dns.cloudflare.com/dns-query",
       "Protocol": "https",
       "SOCKS5Address": "",
       "Timeout": 10,
@@ -50,27 +38,39 @@
         "ExternalIP": "111.18.102.19",
         "NoCookie": false
       }
-    }
+    },
+     {
+       "Name": "cloudflare2",
+       "Address": "https://cloudflare-dns.com/dns-query",
+       "Protocol": "https",
+       "SOCKS5Address": "",
+       "Timeout": 10,
+       "EDNSClientSubnet": {
+         "Policy": "auto",
+         "ExternalIP": "111.18.102.19",
+         "NoCookie": false
+       }
+     }
   ],
-  "OnlyPrimaryDNS": true,
+  "OnlyPrimaryDNS": false,
   "IPv6UseAlternativeDNS": false,
-  "AlternativeDNSConcurrent": false,
+  "AlternativeDNSConcurrent": true,
   "WhenPrimaryDNSAnswerNoneUse": "PrimaryDNS",
   "IPNetworkFile": {
-    "Primary": "./ip_network_primary_sample",
-    "Alternative": "./ip_network_alternative_sample"
+    "Primary": "/overture/ip_network_primary",
+    "Alternative": ""
   },
   "DomainFile": {
-    "Primary": "./domain_primary_sample",
-    "Alternative": "./domain_alternative_sample",
+    "Primary": "",
+    "Alternative": "/overture/domain_alternative_sample",
     "Matcher":  "regex-list"
   },
   "HostsFile": {
-    "HostsFile": "./hosts_sample",
+    "HostsFile": "/overture/hosts_sample",
     "Finder": "full-map"
   },
   "MinimumTTL": 300,
-  "DomainTTLFile" : "./domain_ttl_sample",
+  "DomainTTLFile" : "/overture/domain_ttl_sample",
   "CacheSize" : 4096,
   "RejectQType": [255]
 }
