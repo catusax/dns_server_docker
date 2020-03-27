@@ -29,7 +29,7 @@
   "AlternativeDNS": [
     {
       "Name": "cloudflare",
-      "Address": "https://dns.cloudflare.com/dns-query",
+      "Address": "https://1.1.1.1/dns-query",
       "Protocol": "https",
       "SOCKS5Address": "",
       "Timeout": 10,
@@ -41,7 +41,7 @@
     },
      {
        "Name": "cloudflare2",
-       "Address": "https://cloudflare-dns.com/dns-query",
+       "Address": "https://1.0.0.1/dns-query",
        "Protocol": "https",
        "SOCKS5Address": "",
        "Timeout": 10,
@@ -57,7 +57,7 @@
   "AlternativeDNSConcurrent": true,
   "WhenPrimaryDNSAnswerNoneUse": "PrimaryDNS",
   "IPNetworkFile": {
-    "Primary": "/overture/ip_network_primary",
+    "Primary": "/overture/ip_network_primary_sample",
     "Alternative": ""
   },
   "DomainFile": {
@@ -72,5 +72,5 @@
   "MinimumTTL": 300,
   "DomainTTLFile" : "/overture/domain_ttl_sample",
   "CacheSize" : 4096,
-  "RejectQType": [255]
+  "rejectqtype": [255]
 }
