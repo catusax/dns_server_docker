@@ -1,11 +1,11 @@
 version: '3'
 
 services:
-  overture:
+  smartdns:
     restart: always
-    image: coolrc/overture
+    image: ghostry/smartdns
     volumes:
-      - ./config:/overture
+      - ./smartdns.conf:/config.conf
 
   doh:
     restart: always
