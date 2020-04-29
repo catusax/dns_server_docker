@@ -9,10 +9,9 @@ services:
 
   doh:
     restart: always
-    image: coolrc/dns-over-https
+    image: satishweb/doh-server
     volumes:
-      - ./doh-server.conf:/doh-server.conf
-    user: root
+      - ./doh-server.conf:/server/doh-server.conf
 
   nginx:
     restart: always
