@@ -38,19 +38,7 @@
         "ExternalIP": "111.18.102.19",
         "NoCookie": false
       }
-    },
-     {
-       "Name": "geekdns",
-       "Address": "https://dns.233py.com/dns-query",
-       "Protocol": "https",
-       "SOCKS5Address": "",
-       "Timeout": 10,
-       "EDNSClientSubnet": {
-         "Policy": "auto",
-         "ExternalIP": "111.18.102.19",
-         "NoCookie": false
-       }
-     }
+    }
   ],
   "OnlyPrimaryDNS": false,
   "IPv6UseAlternativeDNS": false,
