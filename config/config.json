@@ -29,7 +29,7 @@
   "AlternativeDNS": [
     {
       "Name": "cloudflare",
-      "Address": "https://1.1.1.1/dns-query",
+      "Address": "https://dns.rubyfish.cn/dns-query",
       "Protocol": "https",
       "SOCKS5Address": "",
       "Timeout": 10,
@@ -40,8 +40,8 @@
       }
     },
      {
-       "Name": "cloudflare2",
-       "Address": "https://1.0.0.1/dns-query",
+       "Name": "geekdns",
+       "Address": "https://dns.233py.com/dns-query",
        "Protocol": "https",
        "SOCKS5Address": "",
        "Timeout": 10,

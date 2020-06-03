@@ -8,9 +8,8 @@ ENV DOWNLOAD_URL https://github.com/shawn1m/overture/releases/download/${VERSION
 
 RUN apk add --no-cache ca-certificates \
     && wget ${DOWNLOAD_URL} \
-    && unzip overture-linux-amd64.zip \
+    && unzip overture-linux-amd64.zip "overture-linux-amd64"\
     && mkdir overture \
-    && unzip overture-linux-amd64.zip -d overture \
     && rm overture-linux-amd64.zip
 
 CMD /overture-linux-amd64 -c /overture/config.json
