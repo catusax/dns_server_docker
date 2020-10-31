@@ -6,6 +6,11 @@ services:
     image: coolrc/overture
     volumes:
       - ./config:/overture
+    healthcheck:
+      test: ["CMD", "dig", "@127.0.0.1", "-p", "5353", "www.baidu.com", "||", "exit", "1"]
+      interval: 30s
+      timeout: 2s
+      retries: 3
 
   doh:
     restart: always

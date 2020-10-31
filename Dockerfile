@@ -6,7 +6,7 @@ ENV TZ "Asia/Shanghai"
 ENV VERSION v1.6.1
 ENV DOWNLOAD_URL https://github.com/shawn1m/overture/releases/download/${VERSION}/overture-linux-amd64.zip
 
-RUN apk add --no-cache ca-certificates \
+RUN apk add --no-cache ca-certificates bind-tools \
     && wget ${DOWNLOAD_URL} \
     && unzip overture-linux-amd64.zip "overture-linux-amd64"\
     && mkdir overture \

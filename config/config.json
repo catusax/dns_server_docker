@@ -28,8 +28,20 @@
   ],
   "AlternativeDNS": [
     {
-      "Name": "cloudflare",
+      "Name": "rubyfish",
       "Address": "https://dns.rubyfish.cn/dns-query",
+      "Protocol": "https",
+      "SOCKS5Address": "",
+      "Timeout": 10,
+      "EDNSClientSubnet": {
+        "Policy": "auto",
+        "ExternalIP": "111.18.102.19",
+        "NoCookie": false
+      }
+    },
+    {
+      "Name": "rubyfish2",
+      "Address": "https://6bjjpq.d.rubyfish.cn",
       "Protocol": "https",
       "SOCKS5Address": "",
       "Timeout": 10,
@@ -42,7 +54,7 @@
   ],
   "OnlyPrimaryDNS": false,
   "IPv6UseAlternativeDNS": false,
-  "AlternativeDNSConcurrent": true,
+  "AlternativeDNSConcurrent": false,
   "WhenPrimaryDNSAnswerNoneUse": "PrimaryDNS",
   "IPNetworkFile": {
     "Primary": "/overture/ip_network_primary_sample",
