@@ -28,8 +28,8 @@
   ],
   "AlternativeDNS": [
     {
-      "Name": "rubyfish",
-      "Address": "https://dns.rubyfish.cn/dns-query",
+      "Name": "cloudflare",
+      "Address": "https://1.1.1.1/dns-query",
       "Protocol": "https",
       "SOCKS5Address": "",
       "Timeout": 10,
@@ -40,8 +40,20 @@
       }
     },
     {
-      "Name": "rubyfish2",
-      "Address": "https://6bjjpq.d.rubyfish.cn",
+      "Name": "cloudflare2",
+      "Address": "https://1.0.0.1/dns-query",
+      "Protocol": "https",
+      "SOCKS5Address": "",
+      "Timeout": 10,
+      "EDNSClientSubnet": {
+        "Policy": "auto",
+        "ExternalIP": "111.18.102.19",
+        "NoCookie": false
+      }
+    },
+    {
+      "Name": "rubyfish",
+      "Address": "https://dns.rubyfish.cn/dns-query",
       "Protocol": "https",
       "SOCKS5Address": "",
       "Timeout": 10,
