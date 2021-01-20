@@ -1,1 +1,2 @@
-curl https://raw.githubusercontent.com/vokins/yhosts/master/hosts -o hosts_sample
+curl https://cdn.jsdelivr.net/gh/VeleSila/yhosts/hosts -o hosts
+cat hosts.txt >> hosts

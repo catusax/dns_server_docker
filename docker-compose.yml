@@ -1,31 +1,20 @@
 version: '3'
 
 services:
-  overture:
+  dns:
     restart: always
-    image: coolrc/overture
+    image: coolrc/ts-dns
     volumes:
-      - ./config:/overture
+      - ./config:/root/config
+      - ./ts-dns.toml:/root/ts-dns.toml
     healthcheck:
-      test: dig @127.0.0.1 -p 5353 www.google.com || exit 1
+      test: dig @127.0.0.1 -p 53 www.google.com || exit 1
       interval: 30s
       timeout: 2s
-      retries: 3
+      retries: 5
     labels:
       - "autoheal=true"
 
-  overture2:
-    restart: always
-    image: coolrc/overture
-    volumes:
-      - ./config:/overture
-    healthcheck:
-      test: dig @127.0.0.1 -p 5353 www.google.com || exit 1
-      interval: 30s
-      timeout: 2s
-      retries: 3
-    labels:
-      - "autoheal=true"
 
   doh:
     restart: always
@@ -38,22 +27,11 @@ services:
       interval: 2m
       timeout: 3s
       retries: 3
-    labels:
-      - "autoheal=true"
+    ports:
+      - "8053:8053"
+        #labels:
+      #- "autoheal=true"
 
-  doh2:
-    restart: always
-    image: satishweb/doh-server
-    volumes:
-      - ./doh-server.conf:/server/doh-server.conf
-    healthcheck:
-      #disable: true
-      test: wget -O - 127.0.0.1:8053/dns-query?name=www.google.com&type=A || exit 1
-      interval: 2m
-      timeout: 3s
-      retries: 3
-    labels:
-      - "autoheal=true"
 
   nginx:
     restart: always
@@ -61,18 +39,17 @@ services:
     user: root
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
-      - /etc/letsencrypt/live/dns.coolrc.top/fullchain.pem:/ssl/fullchain.pem
-      - /etc/letsencrypt/live/dns.coolrc.top/privkey.pem:/ssl/privkey.pem
-    healthcheck:
-      test: curl "https://127.0.0.1/dns-query?name=baidu.com&type=A" -k || exit 1
-      interval: 2m
-      timeout: 3s
-      retries: 3
+      - /root/caddy-https-config/.caddy/data/caddy/certificates/acme-v02.api.letsencrypt.org-directory/dns.coolrc.top/:/ssl/
+    # 绑定caddy的数据，让caddy自动更新证书
+    #    healthcheck:
+    # test: curl "https://127.0.0.1/dns-query?name=baidu.com&type=A" -k || exit 1
+     # interval: 2m
+     # timeout: 3s
+     # retries: 3
     ports:
       - "853:853"
-      - "443:443"
-    labels:
-      - "autoheal=true"
+        #    labels:
+        #- "autoheal=true"
 
   autoheal:
     restart: always
