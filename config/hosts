@@ -1,4 +1,4 @@
-#version=202101180922
+#version=202102071254
 #url=https://github.com/VeleSila/yhosts/blob/master/hosts
 #-----Test
 127.0.0.1 at.umeng.com
@@ -3005,6 +3005,7 @@
 127.0.0.1 api.xk.miui.com
 127.0.0.1 api.zhy333.com
 127.0.0.1 apisoft.df0535.com
+127.0.0.1 apkim.w0kzkd.cn
 127.0.0.1 apk.fgzba.com
 127.0.0.1 apk.gelinboer.cn
 127.0.0.1 apk.idate520.com
@@ -3160,6 +3161,7 @@
 127.0.0.1 c.lalaxqt.cn
 127.0.0.1 c.lbsbbw.cn
 127.0.0.1 c.lianwangtech.com
+127.0.0.1 c.lovepets70.com
 127.0.0.1 c.lrzazjl.cn
 127.0.0.1 c.lucktui.com
 127.0.0.1 c.mightiger.net
@@ -3194,6 +3196,7 @@
 127.0.0.1 c.syooys.com
 127.0.0.1 c.t98u8f.com
 127.0.0.1 c.tctyb.cn
+127.0.0.1 c.tjmzzk.com
 127.0.0.1 c.v-meng.org
 127.0.0.1 c.v4dwkcv.com
 127.0.0.1 c.vip97.net
@@ -3201,6 +3204,7 @@
 127.0.0.1 c.wechat.jx.cn
 127.0.0.1 c.wofbw.top
 127.0.0.1 c.xadingli.cn
+127.0.0.1 c.xbjcgs.cn
 127.0.0.1 c.xianguonongchang.org
 127.0.0.1 c.xiaozhuyoupu.com
 127.0.0.1 c.xilongfuwu.com
@@ -4103,6 +4107,7 @@
 127.0.0.1 fpbjiansuo.mn586.com
 127.0.0.1 fsjsp.com
 127.0.0.1 fuk.xckxjtbg.com
+127.0.0.1 fw.privateadx.com
 127.0.0.1 fw.zhuaji.org
 127.0.0.1 fyal.e9emh.cn
 127.0.0.1 fyq.wlgszt.com
@@ -4160,6 +4165,7 @@
 127.0.0.1 go.mudoudou.net
 127.0.0.1 go.onclasrv.com
 127.0.0.1 go.sghjtc.xyz
+127.0.0.1 go.shazi8.com
 127.0.0.1 go.util.zlibs.com
 127.0.0.1 godloveme.cn
 127.0.0.1 gog9.qzdfc.com
@@ -4615,6 +4621,7 @@
 127.0.0.1 log.orchidscape.net
 127.0.0.1 lol.pnhfc.com
 127.0.0.1 loldy.jiangmg.com
+127.0.0.1 lq0s3c.cn
 127.0.0.1 lskwsx.m.zwdu.com
 127.0.0.1 lu.w3vj.cn
 127.0.0.1 luotediao.net
@@ -5596,6 +5603,7 @@
 127.0.0.1 maocai.xvtpvc.cn
 127.0.0.1 mass.mall044.com
 127.0.0.1 material.mtty.xin
+127.0.0.1 matthewsery.com
 127.0.0.1 matwbp.iask.sina.com.cn
 127.0.0.1 maw.wnbfw.com
 127.0.0.1 mc.hujiang.com
@@ -5616,6 +5624,7 @@
 127.0.0.1 miaobeichina.com
 127.0.0.1 mil.gbzumh.cn
 127.0.0.1 miui.hftaili.com
+127.0.0.1 miv.ububyiw6655.xyz
 127.0.0.1 mj70.cn
 127.0.0.1 mjf.lijun8.com
 127.0.0.1 mjs.csyymp4.com
@@ -5764,6 +5773,7 @@
 127.0.0.1 nsxtob.cn
 127.0.0.1 nsy.hnzyfs.com
 127.0.0.1 nuloe.alksdh.com
+127.0.0.1 nusic.ic86doc.com
 127.0.0.1 nv.souid.com
 127.0.0.1 nvrentao8.com
 127.0.0.1 nwejs.alcryp.com
@@ -5803,13 +5813,16 @@
 127.0.0.1 oy.qthp82.cn
 127.0.0.1 p.99mssj.com
 127.0.0.1 p.9wotuan.com
+127.0.0.1 p.ahzsjzgc.com
 127.0.0.1 p.bjdianyue.com
 127.0.0.1 p.bnuni.com
 127.0.0.1 p.eaglesh.cn
+127.0.0.1 p.jclz622983.com
 127.0.0.1 p.kf3msfm.com
 127.0.0.1 p.m5bn.com
 127.0.0.1 p.mendoc.cn
 127.0.0.1 p.niudashu.com
+127.0.0.1 p.pstatp.com
 127.0.0.1 p.qiailm.com
 127.0.0.1 p.qijijs.top
 127.0.0.1 p.qfmzys.com
@@ -5824,6 +5837,19 @@
 127.0.0.1 p6.95558000.com
 127.0.0.1 p7.95558000.com
 127.0.0.1 p8.95558000.com
+127.0.0.1 p1.pstatp.com
+127.0.0.1 p2.pstatp.com
+127.0.0.1 p3.pstatp.com
+127.0.0.1 p4.pstatp.com
+127.0.0.1 p5.pstatp.com
+127.0.0.1 p6.pstatp.com
+127.0.0.1 p7.pstatp.com
+127.0.0.1 p8.pstatp.com
+127.0.0.1 p9.pstatp.com
+127.0.0.1 p10.pstatp.com
+127.0.0.1 pb1.pstatp.com
+127.0.0.1 pb2.pstatp.com
+127.0.0.1 pb3.pstatp.com
 127.0.0.1 package.minghui.org
 127.0.0.1 pad.zhywyl.cn
 127.0.0.1 page.santc.cn
@@ -5841,6 +5867,7 @@
 127.0.0.1 pc.cathaycentury.com
 127.0.0.1 pc.ctsywy.com
 127.0.0.1 pc.gutouwang.net
+127.0.0.1 pc.weizhenwx.com
 127.0.0.1 pc.ziyuewentao.com
 127.0.0.1 pear.dleke.com
 127.0.0.1 pf.h2rybi.cn
@@ -5987,6 +6014,7 @@
 127.0.0.1 qrbizr.cn
 127.0.0.1 qrrl.cwj2h.cn
 127.0.0.1 qtpb.12jf3.cn
+127.0.0.1 ququdm.com
 127.0.0.1 qwe.jzpxyd.com
 127.0.0.1 qwe.tl875f.cn
 127.0.0.1 qweqwe.mctvhp.cn
@@ -6025,6 +6053,7 @@
 127.0.0.1 rs.haohaowan8.com
 127.0.0.1 rsas.szzek.com
 127.0.0.1 rt2.m.630book.la
+127.0.0.1 rte.fuoo1.top
 127.0.0.1 rtnp.just9229.cn
 127.0.0.1 ruskhw.cn
 127.0.0.1 rwq.youle55.com
@@ -6043,6 +6072,7 @@
 127.0.0.1 s.coveredsys.cn
 127.0.0.1 s.cshkjf.top
 127.0.0.1 s.dbojetp.cn
+127.0.0.1 s.ddgjjj.com
 127.0.0.1 s.ddstu.com
 127.0.0.1 s.doyo.cn
 127.0.0.1 s.dpcq1.net
@@ -6132,6 +6162,7 @@
 127.0.0.1 scfrwo.cn
 127.0.0.1 scimg.27admin.com
 127.0.0.1 script-bd.baixing.net
+127.0.0.1 sdbdccq.com
 127.0.0.1 sdf.liaotian4.com
 127.0.0.1 sdk.appadhoc.com
 127.0.0.1 sdk.cferw.com
@@ -6451,6 +6482,7 @@
 127.0.0.1 v.com.5p67n.cn
 127.0.0.1 v.dcgwnhk.cn
 127.0.0.1 v.dengbaozx.cn
+127.0.0.1 v.dfseafood.com
 127.0.0.1 v.dg186.cn
 127.0.0.1 v.dhsfcw.cn
 127.0.0.1 v.e7002.com
@@ -6464,6 +6496,7 @@
 127.0.0.1 v.l0yjow.cn
 127.0.0.1 v.lalaxit.cn
 127.0.0.1 v.lalaxqt.cn
+127.0.0.1 v.lovepets70.com
 127.0.0.1 v.lrzazjl.cn
 127.0.0.1 v.lystrw.cn
 127.0.0.1 v.mozqca.cn
@@ -6480,6 +6513,7 @@
 127.0.0.1 v.tgslww.cn
 127.0.0.1 v.tr31t.cn
 127.0.0.1 v.xadingli.cn
+127.0.0.1 v.xbjcgs.cn
 127.0.0.1 v.xinshide.cn
 127.0.0.1 v.xiuzhenjewelry.cn
 127.0.0.1 v.xrooxeo.cn
@@ -6542,6 +6576,7 @@
 127.0.0.1 vs8.gzcu.u3.ucweb.com
 127.0.0.1 vsqf.nal5h.cn
 127.0.0.1 vt.bjhdonline.com
+127.0.0.1 vteyf2.cn
 127.0.0.1 vvp.agzxj8990.com
 127.0.0.1 vvv.lunqudai.com
 127.0.0.1 vvv.qqdashabi.top
@@ -6658,6 +6693,7 @@
 127.0.0.1 www.abie18.top
 127.0.0.1 www.abie19.top
 127.0.0.1 www.abie26.top
+127.0.0.1 www.ad5lm.net
 127.0.0.1 www.ads80.com
 127.0.0.1 www.afj0.com
 127.0.0.1 www.ahw3.com
@@ -6845,6 +6881,7 @@
 127.0.0.1 www.qzgjprj.com
 127.0.0.1 www.rangzhuai.com
 127.0.0.1 www.rannabio.com
+127.0.0.1 www.ranqibio.com
 127.0.0.1 www.renminben.com
 127.0.0.1 www.rrrwwwa.com
 127.0.0.1 www.sa909.com
@@ -6939,6 +6976,7 @@
 127.0.0.1 wxas.ejwmc.cn
 127.0.0.1 wxb.wxbdfm.com
 127.0.0.1 wxtz.houmags.com
+127.0.0.1 wxr.kebi1.top
 127.0.0.1 wxwm1.ikuailian.com
 127.0.0.1 wxwm2.ikuailian.com
 127.0.0.1 wysa.2wxb5.cn
@@ -7047,6 +7085,7 @@
 127.0.0.1 ycszgt.cn
 127.0.0.1 ycy.hyjyjc.com
 127.0.0.1 ydlz.k859n.cn
+127.0.0.1 yds.kebi1.top
 127.0.0.1 ye.tsdlp.com
 127.0.0.1 yess.imneinei.com
 127.0.0.1 yfcode.m.gxwztv.com
@@ -9386,3 +9425,10 @@
 127.0.0.1 pv.dakawm.cc
 127.0.0.1 xzj.kebi1.top
 127.0.0.1 n.35kds.com
+127.0.0.1 fjjmnh.com
+127.0.0.1 jsmxkj.com
+127.0.0.1 dat8.cc
+127.0.0.1 036e.cn
+127.0.0.1 hxlover.com
+127.0.0.1 etl-xlmc-ssl.xunlei.com
+127.0.0.1 fangniaowang.net

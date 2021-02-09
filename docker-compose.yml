@@ -19,8 +19,21 @@ services:
   doh:
     restart: always
     image: satishweb/doh-server
-    volumes:
-      - ./doh-server.conf:/server/doh-server.conf
+    environment:
+      DEBUG: "0"
+      # Upstream DNS server: proto:host:port
+      # We are using OpenDNS DNS servers as default,
+      # Here is the list of addresses: https://use.opendns.com/
+      UPSTREAM_DNS_SERVER: "udp:dns:53"
+      DOH_HTTP_PREFIX: "/dns-query"
+      DOH_SERVER_LISTEN: ":8053"
+      DOH_SERVER_TIMEOUT: "5"
+      DOH_SERVER_TRIES: "3"
+      DOH_SERVER_VERBOSE: "false"
+      # You can add more variables here or as docker secret and entrypoint
+      # script will replace them inside doh-server.conf file
+    #volumes:
+    #  - ./doh-server.conf:/server/doh-server.conf
     healthcheck:
       #disable: true
       test: wget -O - 127.0.0.1:8053/dns-query?name=www.google.com&type=A || exit 1
