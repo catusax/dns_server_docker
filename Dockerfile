@@ -6,6 +6,7 @@ RUN apk add git
 RUN go env -w GOPROXY=https://goproxy.io,direct \
     && git clone https://github.com/wolf-joe/ts-dns.git
 RUN cd ts-dns/cmd \
+    && go mod tidy \
     && go build -o ts-dns
 
 FROM alpine as prod
