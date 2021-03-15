@@ -36,7 +36,7 @@ services:
     #  - ./doh-server.conf:/server/doh-server.conf
     healthcheck:
       #disable: true
-      test: wget -O - 127.0.0.1:8053/dns-query?name=www.google.com&type=A || exit 1
+      test: wget --no-verbose --tries=1 -O - "127.0.0.1:8053/dns-query?name=www.google.com&type=A" || exit 1
       interval: 2m
       timeout: 3s
       retries: 3
